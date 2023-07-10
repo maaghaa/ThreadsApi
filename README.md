@@ -3,6 +3,14 @@
 
 This is a php class to handle api requests to the Threads platform. You can use this class to perform various actions such as posting threads, comments, chat messages, deleting threads, messages, listing channels and uploading files.
 
+## Authentication
+
+You can create a new API key and find your existing keys at https://threads.com/apiKeys
+
+When you create a new API key, we create a new Bot user for the key. The Bot user has the same posting privileges as any member in your organization.
+
+All requests to the API must include this key as a bearer token in the Authorization header e.g. Authorization: Bearer <your_api_key>.
+
 ## Installation
 
 To use this class, you need to have php installed on your system and a valid api key from Threads. You can get an api key by creating a bot user on Threads and copying the api key from the bot settings page.
